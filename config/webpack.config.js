@@ -4,16 +4,16 @@ var path = require('path');
 var webpack = require('webpack');
 
 var config = {
-  context: __dirname,
+  context: path.resolve(__dirname, '..'),
   devtool: 'eval',
   devServer: {
-    contentBase: path.join(__dirname, 'build')
+    contentBase: path.join(__dirname, '..', 'build')
   },
   entry: {
     bundle: ['webpack/hot/dev-server', 'webpack-dev-server/client?http://localhost:8080', './src/bundle.js']
   },
   output: {
-    path: path.resolve(__dirname, process.env.NODE_ENV === 'production' ? 'dist' : 'build'),
+    path: path.resolve(__dirname, '..', process.env.NODE_ENV === 'production' ? 'dist' : 'build'),
     filename: "[name].js"
   },
   eslint: {
