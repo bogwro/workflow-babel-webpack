@@ -4,7 +4,7 @@ require('../../globals');
 
 var open = require('open');
 
-exports.task = function() {
+exports.task = function(callback) {
   var devConfig = Object.create(config.webpackConfig);
   var compiler;
 
@@ -17,6 +17,9 @@ exports.task = function() {
     if(error) {
       console.log('ERROR', error);
     }
+
+    callback(error);
+
     setTimeout(function () {
       open('http://localhost:8080');
     }, 1000);
