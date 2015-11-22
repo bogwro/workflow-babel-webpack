@@ -8,6 +8,10 @@
   },
   "author": "Bogumil Wrona",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cre8newmedia/babel-webpack-perfect-setup"
+  },
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-eslint": "^4.1.5",
