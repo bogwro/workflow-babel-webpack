@@ -8,6 +8,9 @@ exports.task = function(callback) {
   var devConfig = Object.create(config.webpackConfig);
   var compiler;
 
+  devConfig.entry.bundle.unshift('webpack/hot/dev-server', 'webpack-dev-server/client?http://localhost:8080');
+
+  devConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
 
   compiler = webpack(devConfig);
 
@@ -15,7 +18,7 @@ exports.task = function(callback) {
     contentBase: 'build'
   }).listen(8080, 'localhost', function(error) {
     if(error) {
-      console.log('ERROR', error);
+      console.log('ERROR', error.message);
     }
 
     callback(error);

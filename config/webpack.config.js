@@ -10,10 +10,10 @@ var config = {
     contentBase: path.join(__dirname, '..', 'build')
   },
   entry: {
-    bundle: ['webpack/hot/dev-server', 'webpack-dev-server/client?http://localhost:8080', './src/bundle.js']
+    bundle: ['./src/bundle.js']
   },
   output: {
-    path: path.resolve(__dirname, '..', process.env.NODE_ENV === 'production' ? 'dist' : 'build'),
+    path: path.resolve(__dirname, '..', 'build'),
     filename: "[name].js"
   },
   eslint: {
@@ -39,7 +39,7 @@ var config = {
       }
     ]
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: []
 };
 
 module.exports = config;
