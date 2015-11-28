@@ -17,7 +17,7 @@ var config = {
     filename: "[name].js"
   },
   eslint: {
-    configFile: './.eslintrc'
+    configFile: './.eslintrc.js'
   },
   module: {
     preLoaders: [
