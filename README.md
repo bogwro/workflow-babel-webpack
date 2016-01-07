@@ -23,6 +23,10 @@ List of included components:
   * webpack + babel
   * editorconfig
   * ESLint
+2. Gulp tasks
+  * `webpack-dev-server`
+  * `release`
+
 # Getting Started
 
 ## Dependencies
