@@ -34,7 +34,7 @@ var config = {
         loader: 'babel',
         query: {
           presets: ['es2015', 'stage-0', 'stage-1', 'stage-2', 'stage-3'],
-          plugins: ['transform-strict-mode']
+          plugins: ['transform-strict-mode', 'transform-runtime']
         }
       }
     ]
