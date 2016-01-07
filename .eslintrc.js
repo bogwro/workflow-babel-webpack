@@ -10,5 +10,16 @@ module.exports = {
   extends: 'eslint:recommended',
   globals: {
     assert: false
+  },
+  plugins:  [
+    'babel'
+  ],
+  'rules': {
+    "babel/generator-star-spacing": 1,
+    "babel/new-cap": 1,
+    "babel/object-curly-spacing": 1,
+    "babel/object-shorthand": 1,
+    "babel/arrow-parens": 1,
+    "babel/no-await-in-loop": 1
   }
 };
