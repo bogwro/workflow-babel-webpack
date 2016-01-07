@@ -26,6 +26,15 @@ List of included components:
 2. Gulp tasks
   * `webpack-dev-server`
   * `release`
+3. Quality Assurance
+  * Unit Tests
+    * karma
+    * mocha
+    * chai
+    * sinon
+  * GIT Hooks
+    * `pre-commit`
+
 
 # Getting Started
 
