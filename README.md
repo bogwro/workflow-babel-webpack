@@ -57,9 +57,12 @@ git clone --depth 1 --origin workflow https://github.com/bogwro/workflow-babel-w
 cd NAME_OF_YOUR_PROJECT
 rm -rf .git
 git init
+git remote add origin USER@HOST:YOUR_GIT_REPOSITORY
+
+# now apply your changes before first commit
+
 git add .
 git commit -m 'initial commit'
-git remote add origin USER@HOST:YOUR_GIT_REPOSITORY
 git fetch origin
 git push -u origin master
 ```
