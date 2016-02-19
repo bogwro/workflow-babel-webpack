@@ -51,12 +51,14 @@ What you need to run this app:
 > Use this method when you would like to only use this project to start your own one
 
 Steps:
-1. `git clone --depth 1 --origin workflow https://github.com/cre8newmedia/babel-webpack-perfect-setup.git NAME_OF_YOUR_PROJECT`
-2. `cd NAME_OF_YOUR_PROJECT`
-3. `git remote rm workflow`
-4. `git remote add origin ssh://USER@HOST:YOUR_GIT_REPOSITORY`
-5. `git fetch origin`
-6. `git push -u origin master`
+```
+git clone --depth 1 --origin workflow https://github.com/bogwro/workflow-babel-webpack.git NAME_OF_YOUR_PROJECT
+cd NAME_OF_YOUR_PROJECT
+git remote rm workflow
+git remote add origin ssh://USER@HOST:YOUR_GIT_REPOSITORY
+git fetch origin
+git push -u origin master
+```
 
 ### Method #2 - Fork it
 
@@ -65,6 +67,7 @@ Steps:
 > Use this method when you would like to contribute to this project.
 
 Steps:
+
 1. `fork` this repo
 2. `clone` your fork
 
@@ -76,6 +79,7 @@ Steps:
 Download it from [GitHub](https://github.com/bogwro/workflow-babel-webpack/releases)
 
 ### Once you have it locally:
+
 * `nvm install` (optional)
 * `nvm use` (optional)
 * `npm install` to install all dependencies
