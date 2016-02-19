@@ -1,3 +1,5 @@
+/*global gulp*/
+
 'use strict';
 
 require('../../globals');

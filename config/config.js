@@ -1,3 +1,5 @@
+/*global path root*/
+
 'use strict';
 
 require('./globals');

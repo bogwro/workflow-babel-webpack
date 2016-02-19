@@ -1,3 +1,5 @@
+/*global del*/
+
 'use strict';
 
 require('../../globals');

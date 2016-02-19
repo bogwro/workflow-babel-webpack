@@ -1,7 +1,6 @@
 'use strict';
 
 var path = require('path');
-var webpack = require('webpack');
 
 var config = {
   context: path.resolve(__dirname, '..'),
@@ -33,7 +32,7 @@ var config = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
-          presets: ['es2015', 'stage-0', 'stage-1', 'stage-2', 'stage-3'],
+          presets: ['es2015', 'stage-0'],
           plugins: ['transform-strict-mode', 'transform-runtime']
         }
       }

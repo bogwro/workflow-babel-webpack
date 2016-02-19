@@ -5,6 +5,14 @@ class Car {
     this.brand = brand;
   }
 
+  set brand(val) {
+    this._brand = val;
+  }
+
+  get brand() {
+    return this._brand;
+  }
+
   toString() {
     return `${this.brand} with engine size ${this.engineSize}`;
   }

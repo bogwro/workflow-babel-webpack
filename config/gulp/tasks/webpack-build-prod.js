@@ -1,3 +1,5 @@
+/*global config path webpack*/
+
 'use strict';
 
 require('../../globals');
@@ -16,10 +18,10 @@ exports.task = function(callback) {
 
   webpack(prodConfig, function(err, stats) {
     if(err) {
-      console.error(err);
+      console.error(err); // eslint-disable-line
     }
 
-    console.log(stats.toString({
+    console.log(stats.toString({ // eslint-disable-line
       colors: true
     }));
 
