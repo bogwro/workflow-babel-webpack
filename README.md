@@ -55,7 +55,7 @@ Steps:
 ```
 git clone --depth 1 --origin workflow https://github.com/bogwro/workflow-babel-webpack.git NAME_OF_YOUR_PROJECT
 cd NAME_OF_YOUR_PROJECT
-rm -rf ./.git
+rm -rf .git
 git init
 git add .
 git commit -m 'initial commit'
