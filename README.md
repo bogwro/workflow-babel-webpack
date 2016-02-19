@@ -59,7 +59,7 @@ rm -rf ./.git
 git init
 git add .
 git commit -m 'initial commit'
-git remote add origin ssh://USER@HOST:YOUR_GIT_REPOSITORY
+git remote add origin USER@HOST:YOUR_GIT_REPOSITORY
 git fetch origin
 git push -u origin master
 ```
