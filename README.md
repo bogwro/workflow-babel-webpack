@@ -19,6 +19,7 @@ ECMAScript 2015 / ES6 + ES7 Ready!
 
 
 List of included components:
+
 1. Set-Up
   * webpack + babel
   * editorconfig
