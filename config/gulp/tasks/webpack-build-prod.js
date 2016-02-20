@@ -12,9 +12,7 @@ exports.task = function(callback) {
 
   prodConfig.output.path = path.join(root, 'dist');
 
-  prodConfig.plugins.push([
-    new webpack.optimize.UglifyJsPlugin()
-  ]);
+  prodConfig.plugins.push(new webpack.optimize.UglifyJsPlugin());
 
   webpack(prodConfig, function(err, stats) {
     if(err) {
